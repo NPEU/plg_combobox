@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>NPEU: plg_combobox</name>
+        <description>Joomla! plg_combobox plugin</description>
+        <element>combobox</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <version>0.0.1</version>
+        <client>site</client>
+        <infourl title="NPEU: plg_combobox">https://github.com/NPEU/plg_combobox/releases/tag/v0.0.1</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/plg_combobox/archive/v0.0.1.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
+</updates>
