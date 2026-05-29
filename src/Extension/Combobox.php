@@ -71,8 +71,8 @@ class Combobox extends CMSPlugin implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return self::$enabled ? [
-            'onAjaxCombobox'       => 'onAjaxCombobox',
-            'onBeforeRender'       => 'onBeforeRender',
+            'onAjaxCombobox' => 'onAjaxCombobox',
+            'onAfterRoute'   => 'onAfterRoute',
         ] : [];
     }
 
@@ -80,7 +80,7 @@ class Combobox extends CMSPlugin implements SubscriberInterface
     /**
      * Add CSS and JS for admin.
      */
-    public function onBeforeRender(Event $event): void
+    public function onAfterRoute(Event $event): void
     {
         $app = Factory::getApplication();
 
